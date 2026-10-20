@@ -1,0 +1,60 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #222;
+color: white;
+display: grid; /* ativa o CSS GRID para organizar os elementos*/
+grid-template-columns: 1fr 2fr; /* define a quantidade de colunas e o tamanho*/
+align-items: center;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+a{
+    color: white;
+}
+
+.broca{
+    display: grid;/* ativa o grid */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+}
+
+.card{
+    background-color: rgba(13, 39, 13, 0.856);
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*media query = faz com que os elementos tenham comportamentos diferentes em tamanhos de telas diferentes*/
+
+/* media query para tablet */
+@media (max-width:800px){
+    .broca{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* media query para celular */
+
+@media (max-width:500px){
+    .header{
+        grid-template-columns: 1fr;
+    }
+    .broca {
+        grid-template-columns: 1fr;
+    }
+}
